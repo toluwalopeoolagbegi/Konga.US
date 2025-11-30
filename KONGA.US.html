@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konga.US - Authentic African Products, Delivered Fast</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind theme with brand colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'konga-primary': '#FF4500', // A strong orange/red
+                        'konga-accent': '#FFC300', // Gold/Yellow accent
+                        'konga-bg': '#f7f7f7', // Light grey background
+                        'konga-dark': '#333333', // Dark text
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for aesthetics */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #FF4500;
+            border-radius: 4px;
+        }
+        .hero-bg {
+            background-color: #f7f7f7;
+            background-image: url("https://placehold.co/1920x600/f7f7f7/FF4500?text=Konga.US+Hero+Banner+-+Authenticity+Meets+Speed");
+            background-position: center;
+            background-size: cover;
+            /* Mimics the slide's visual flair */
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="font-inter bg-white text-konga-dark">
+
+    <!-- Header & Navigation -->
+    <header class="shadow-md sticky top-0 z-50 bg-white">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <!-- Konga.US Logo -->
+                <h1 class="text-3xl font-extrabold text-konga-primary tracking-tight">KONGA.<span class="text-konga-dark">US</span></h1>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#categories" class="text-konga-dark hover:text-konga-primary transition duration-150">Shop Categories</a>
+                <a href="#why-us" class="text-konga-dark hover:text-konga-primary transition duration-150">Why Konga?</a>
+                <a href="#community" class="text-konga-dark hover:text-konga-primary transition duration-150">Community</a>
+                <a href="#invest" class="text-konga-dark hover:text-konga-primary transition duration-150">Sell on Konga</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-konga-dark hover:text-konga-primary transition duration-150 font-medium text-sm">Sign In</button>
+                <button class="bg-konga-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-konga-accent hover:text-konga-dark transition duration-300 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    Cart (0)
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section (Replicating the generated image concept) -->
+        <section class="hero-bg py-20 md:py-32 mb-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-5xl md:text-6xl font-extrabold text-konga-dark leading-tight mb-4">
+                        Authentic Africa. <br class="hidden sm:block">Delivered to the US.
+                    </h2>
+                    <p class="text-xl text-gray-700 mb-8">
+                        The $8.2 Billion opportunity: We connect the African Diaspora and Cultural Explorers to the products they love, with US speed.
+                    </p>
+                    <a href="#categories" class="inline-block bg-konga-primary text-white px-8 py-3 rounded-xl text-lg font-bold shadow-2xl hover:bg-konga-accent hover:text-konga-dark transition duration-300 transform hover:scale-105">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Value Proposition (The Unfair Advantages) -->
+        <section id="why-us" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center mb-12 text-konga-primary">Our Unfair Advantages in the U.S. Market</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Advantage 1: Supply Network -->
+                    <div class="bg-konga-bg p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <span class="text-4xl font-extrabold text-konga-primary block mb-3">01</span>
+                        <h4 class="text-xl font-semibold mb-2">Verified Supply Chain</h4>
+                        <p class="text-gray-600 text-sm">
+                            Relationships with 45,000 verified vendors across Africa (Nigeria, Ghana, Kenya, SA), built over 12 years. Authenticity guaranteed.
+                        </p>
+                    </div>
+
+                    <!-- Advantage 2: Logistics Expertise -->
+                    <div class="bg-konga-bg p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <span class="text-4xl font-extrabold text-konga-primary block mb-3">02</span>
+                        <h4 class="text-xl font-semibold mb-2">Proven Logistics</h4>
+                        <p class="text-gray-600 text-sm">
+                            96% on-time delivery rate in complex environments. Operational excellence is our foundation for fast, reliable US delivery.
+                        </p>
+                    </div>
+
+                    <!-- Advantage 3: Technology -->
+                    <div class="bg-konga-bg p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <span class="text-4xl font-extrabold text-konga-primary block mb-3">03</span>
+                        <h4 class="text-xl font-semibold mb-2">Mobile-First Tech</h4>
+                        <p class="text-gray-600 text-sm">
+                            Platform optimized for cross-border commerce, multi-currency support, and mobile access, now leveraging superior US infrastructure.
+                        </p>
+                    </div>
+
+                    <!-- Advantage 4: Cultural Fluency -->
+                    <div class="bg-konga-bg p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <span class="text-4xl font-extrabold text-konga-primary block mb-3">04</span>
+                        <h4 class="text-xl font-semibold mb-2">Deep Cultural Fluency</h4>
+                        <p class="text-gray-600 text-sm">
+                            We understand the nuances—from regional food preferences to hair care needs—ensuring the right products for every community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Product Categories (Authenticity First) -->
+        <section id="categories" class="py-16 bg-konga-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center mb-12 text-konga-dark">Shop Our Authentic Categories</h3>
+                <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Our catalog prioritizes authenticity first, offering products sourced directly from African artisans and manufacturers, starting with high-frequency essentials.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Category 1: Food & Beverages (40% Year 1) -->
+                    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/400x400/FF4500/ffffff?text=Food+%26+Beverages" alt="African Food" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                        <div class="absolute inset-0 flex items-end p-4">
+                            <h4 class="text-xl font-bold text-white relative z-10">Food & Beverages</h4>
+                            <span class="absolute top-4 right-4 text-white text-xs bg-konga-primary px-3 py-1 rounded-full">40% Catalog</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Beauty & Personal Care (30% Year 1) -->
+                    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/400x400/FFA07A/333333?text=Beauty+%26+Care" alt="African Beauty Products" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                        <div class="absolute inset-0 flex items-end p-4">
+                            <h4 class="text-xl font-bold text-white relative z-10">Beauty & Personal Care</h4>
+                            <span class="absolute top-4 right-4 text-white text-xs bg-konga-primary px-3 py-1 rounded-full">30% Catalog</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Fashion & Accessories (15% Year 2) -->
+                    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/400x400/FFD700/333333?text=Fashion+%26+Acc" alt="African Fashion" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                        <div class="absolute inset-0 flex items-end p-4">
+                            <h4 class="text-xl font-bold text-white relative z-10">Fashion & Accessories</h4>
+                            <span class="absolute top-4 right-4 text-white text-xs bg-konga-accent text-konga-dark px-3 py-1 rounded-full">Coming Q3 '26</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Home & Living (10% Year 2) -->
+                    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/400x400/FF8C00/ffffff?text=Home+%26+Living" alt="African Home Goods" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                        <div class="absolute inset-0 flex items-end p-4">
+                            <h4 class="text-xl font-bold text-white relative z-10">Home & Living</h4>
+                            <span class="absolute top-4 right-4 text-white text-xs bg-konga-accent text-konga-dark px-3 py-1 rounded-full">Coming Q3 '26</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Community-First Acquisition Section -->
+        <section id="community" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold mb-4 text-konga-dark">Community First: Our Path to the U.S. Consumer</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We are not relying on generic marketing. Our strategy is built on **trust, authenticity, and word-of-mouth** within the African diaspora and cultural explorer communities.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-konga-primary text-xl font-extrabold mr-3 mt-1">✓</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Social & Influencers</h4>
+                                <p class="text-sm text-gray-500">Partnering with authentic diaspora voices on Instagram, TikTok, and YouTube.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-konga-primary text-xl font-extrabold mr-3 mt-1">✓</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Community Partnerships</h4>
+                                <p class="text-sm text-gray-500">Engaging with cultural associations, churches, and student groups for deep, high-conversion relationships (50% of CAC budget).</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-konga-primary text-xl font-extrabold mr-3 mt-1">✓</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Referral Program</h4>
+                                <p class="text-sm text-gray-500">Strong incentives like $10 credit for friend referrals to drive organic, viral growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <!-- Placeholder for community image -->
+                    <img src="https://placehold.co/600x400/FF4500/ffffff?text=Community+Partnership+Graphic" alt="Community Graphic" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Pilot Launch Callout (Focusing on Houston) -->
+        <section class="py-12 bg-konga-primary text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-2xl font-bold mb-2">Our U.S. Launch Starts in Houston, TX</p>
+                <p class="text-lg mb-6">Houston is our Phase 1 Pilot Market—a logistics hub with a thriving diaspora community of 150,000+ residents.</p>
+                <button class="bg-white text-konga-primary px-6 py-3 rounded-full text-lg font-bold hover:bg-gray-100 transition duration-300 shadow-xl">
+                    Are We Launching Near You?
+                </button>
+            </div>
+        </section>
+
+        <!-- 6. Sell on Konga Section (Investor/Merchant Focus) -->
+        <section id="invest" class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-4 text-konga-dark">Partner with Konga.US</h3>
+                <p class="text-xl text-gray-600 mb-8">
+                    We invite African artisans, manufacturers, and US businesses to join our growing marketplace and reach the $8.2 billion African Diaspora community.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <div class="bg-konga-bg p-6 rounded-xl shadow-lg md:w-1/2">
+                        <h4 class="text-xl font-semibold mb-3 text-konga-primary">Become a Merchant</h4>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Leverage our existing supply chain network, logistics expertise, and low commission rate (20% vs. Amazon's typical 8-15%) to scale your business in the US.
+                        </p>
+                        <a href="#" class="inline-block bg-konga-primary text-white px-5 py-2 rounded-lg font-semibold hover:bg-konga-accent hover:text-konga-dark transition duration-300">
+                            Apply to Sell
+                        </a>
+                    </div>
+                    <div class="bg-konga-bg p-6 rounded-xl shadow-lg md:w-1/2">
+                        <h4 class="text-xl font-semibold mb-3 text-konga-primary">Investor Opportunity</h4>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Join our Series B funding to back a proven model targeting an underserved, high-growth market with exceptional LTV:CAC economics.
+                        </p>
+                        <a href="#" class="inline-block bg-konga-primary text-white px-5 py-2 rounded-lg font-semibold hover:bg-konga-accent hover:text-konga-dark transition duration-300">
+                            View Investor Deck
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-konga-dark text-white py-10 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <!-- Konga.US Brand -->
+                <div>
+                    <h4 class="text-2xl font-extrabold text-konga-primary mb-3">KONGA.<span class="text-white">US</span></h4>
+                    <p class="text-xs text-gray-400">Shop Smarter, Live Better.</p>
+                </div>
+
+                <!-- Shopping Links -->
+                <div>
+                    <h5 class="text-sm font-bold mb-3 uppercase">Shopping</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#categories" class="hover:text-konga-primary transition duration-150">Today's Deals</a></li>
+                        <li><a href="#categories" class="hover:text-konga-primary transition duration-150">Groceries</a></li>
+                        <li><a href="#categories" class="hover:text-konga-primary transition duration-150">Fashion & Beauty</a></li>
+                        <li><a href="#categories" class="hover:text-konga-primary transition duration-150">Electronics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h5 class="text-sm font-bold mb-3 uppercase">Help & Support</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">Track Your Order</a></li>
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">Returns & Policy</a></li>
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">FAQs</a></li>
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Corporate -->
+                <div>
+                    <h5 class="text-sm font-bold mb-3 uppercase">Konga Group</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">About Us</a></li>
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">Sell on Konga</a></li>
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">Careers</a></li>
+                        <li><a href="#" class="hover:text-konga-primary transition duration-150">Konga Logistics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-span-2 md:col-span-1">
+                    <h5 class="text-sm font-bold mb-3 uppercase">Stay Connected</h5>
+                    <form>
+                        <input type="email" placeholder="Enter your email" class="w-full p-2 rounded-lg text-konga-dark mb-3 focus:outline-none focus:ring-2 focus:ring-konga-primary">
+                        <button type="submit" class="w-full bg-konga-primary hover:bg-konga-accent hover:text-konga-dark font-semibold py-2 rounded-lg transition duration-300">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-6 flex justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2024 Konga.US. All rights reserved.</p>
+                <div class="space-x-4">
+                    <a href="#" class="hover:text-konga-primary">Terms & Conditions</a>
+                    <a href="#" class="hover:text-konga-primary">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
